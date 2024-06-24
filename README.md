@@ -16,9 +16,11 @@ This project involves creating a Bigram Language Model (BigramLM) from scratch, 
 3. **Emotion-Oriented Text Generation**:
     - Used the `emotion_scores()` function from `utils.py` to obtain emotion scores for sentences.
     - Modified the bigram probability to include an emotion component, β:
+      
       \[
       P(w_i \mid w_{i-1}) = \frac{\text{count}(w_i, w_{i-1})}{\text{count}(w_{i-1})} + \beta
       \]
+
       
 4. **Extrinsic Evaluation**:
     - Generated 50 samples for each of the 6 emotions and saved them in `.txt` files.
