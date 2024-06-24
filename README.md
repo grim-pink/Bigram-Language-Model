@@ -17,9 +17,9 @@ This project involves creating a Bigram Language Model (BigramLM) from scratch, 
     - Used the `emotion_scores()` function from `utils.py` to obtain emotion scores for sentences.
     - Modified the bigram probability to include an emotion component, β:
       
-      \[
-      P(w_i \mid w_{i-1}) = \frac{\text{count}(w_i, w_{i-1})}{\text{count}(w_{i-1})} + \beta
-      \]
+       ```
+      P(w_i | w_{i-1}) = (count(w_i, w_{i-1}) / count(w_{i-1})) + β
+      ```
 
       
 4. **Extrinsic Evaluation**:
